@@ -1,0 +1,69 @@
+<sequence_project>
+    <version>0.6</version>
+    <name>Ready CS</name>
+    <sequence>
+        <process type="combinedMove" name="Process 1">
+            <process type="absoluteMove" name="Move 1">
+                <motor_name>COVERSLIP UNIT_Z</motor_name>
+                <final_position>85.000000</final_position>
+                <max_velocity>25.000000</max_velocity>
+                <acc>15.000000</acc>
+                <pre_dwell_time>0.000000</pre_dwell_time>
+                <post_dwell_time>0.000000</post_dwell_time>
+                <trigger type="positionalTrigger" subject="">
+                    <position>80.000000</position>
+                    <operator>&gt;</operator>
+                    <trigger_function type="absoluteMove" motor_name="COVERSLIP UNIT_X">
+                        <final_position>120.000000</final_position>
+                        <max_velocity>40.000000</max_velocity>
+                        <acceleration>10.000000</acceleration>
+                    </trigger_function>
+                </trigger>
+            </process>
+            <process type="absoluteMove" name="Move 2">
+                <motor_name>COVERSLIP UNIT_Angle</motor_name>
+                <final_position>45.000000</final_position>
+                <max_velocity>15.000000</max_velocity>
+                <acc>10.000000</acc>
+                <pre_dwell_time>0.000000</pre_dwell_time>
+                <post_dwell_time>0.000000</post_dwell_time>
+            </process>
+            <process type="absoluteMove" name="Move 3">
+                <motor_name>COVERSLIP UNIT_Y</motor_name>
+                <final_position>150.000000</final_position>
+                <max_velocity>25.000000</max_velocity>
+                <acc>15.000000</acc>
+                <pre_dwell_time>0.000000</pre_dwell_time>
+                <post_dwell_time>0.000000</post_dwell_time>
+            </process>
+        </process>
+        <process type="combinedMove" name="Process 3">
+            <process type="absoluteMove" name="Move 1">
+                <motor_name>COVERSLIP UNIT_Z</motor_name>
+                <final_position>54.000000</final_position>
+                <max_velocity>5.000000</max_velocity>
+                <acc>5.000000</acc>
+                <pre_dwell_time>0.000000</pre_dwell_time>
+                <post_dwell_time>0.000000</post_dwell_time>
+            </process>
+        </process>
+        <process type="combinedMove" name="Process 2">
+            <process type="absoluteMove" name="Move 1">
+                <motor_name>COVERSLIP UNIT_Y</motor_name>
+                <final_position>116.000000</final_position>
+                <max_velocity>3.000000</max_velocity>
+                <acc>3.000000</acc>
+                <pre_dwell_time>0.000000</pre_dwell_time>
+                <post_dwell_time>0.000000</post_dwell_time>
+            </process>
+            <process type="absoluteMove" name="Move 2">
+                <motor_name>COVERSLIP UNIT_Z</motor_name>
+                <final_position>16.000000</final_position>
+                <max_velocity>3.000000</max_velocity>
+                <acc>3.000000</acc>
+                <pre_dwell_time>0.000000</pre_dwell_time>
+                <post_dwell_time>0.000000</post_dwell_time>
+            </process>
+        </process>
+    </sequence>
+</sequence_project>

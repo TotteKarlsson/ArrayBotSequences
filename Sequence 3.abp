@@ -1,0 +1,33 @@
+<sequence_project>
+    <version>0.6</version>
+    <name>Stow CS</name>
+    <sequence>
+        <process type="combinedMove" name="Process 1">
+            <process type="absoluteMove" name="Move 1">
+                <motor_name>COVERSLIP UNIT_Angle</motor_name>
+                <final_position>0.000000</final_position>
+                <max_velocity>15.000000</max_velocity>
+                <acc>10.000000</acc>
+                <pre_dwell_time>0.000000</pre_dwell_time>
+                <post_dwell_time>0.000000</post_dwell_time>
+                <trigger type="positionalTrigger" subject="">
+                    <position>5.000000</position>
+                    <operator>&lt;</operator>
+                    <trigger_function type="absoluteMove" motor_name="COVERSLIP UNIT_X">
+                        <final_position>10.000000</final_position>
+                        <max_velocity>15.000000</max_velocity>
+                        <acceleration>5.000000</acceleration>
+                    </trigger_function>
+                </trigger>
+            </process>
+            <process type="absoluteMove" name="Move 2">
+                <motor_name>COVERSLIP UNIT_Z</motor_name>
+                <final_position>85.000000</final_position>
+                <max_velocity>10.000000</max_velocity>
+                <acc>5.000000</acc>
+                <pre_dwell_time>0.000000</pre_dwell_time>
+                <post_dwell_time>0.000000</post_dwell_time>
+            </process>
+        </process>
+    </sequence>
+</sequence_project>
